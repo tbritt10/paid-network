@@ -16,3 +16,5 @@ A demonstration of vulnerabilities in paid networks (Planes, hotels, truck stops
 5. You need to scan the network to find an authorized device. In our example we are going to do it in a simple way, but in a real attack a tool such as wireshark could be used to find users who are paid by seeing who is sending and recieving more data. 
 Command for both windows and linux: `arp -a` (This will display all devices from the arp cache, this may not include all devices on the network).
 
+![Alt-text](https://github.com/tbritt10/paid-network/blob/master/windowsarp.PNG "Windows ARP results")
+ 
