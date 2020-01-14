@@ -17,4 +17,25 @@ A demonstration of vulnerabilities in paid networks (Planes, hotels, truck stops
 Command for both windows and linux: `arp -a` (This will display all devices from the arp cache, this may not include all devices on the network).
 
 ![Alt-text](https://github.com/tbritt10/paid-network/blob/master/windowsarp.PNG "Windows ARP results")
+
+You can see in the above images that you have multiple devices listed, and that you have access to their mac address (hardware address). Contrary to what the name may lead you to believe, you can change or 'spoof' your mac address very easily. 
+
+### Spoof Hardware address on Windows
+Changing the hardware address on windows can be done in multiple ways, but the easiest is to use Device Manager. 
+1. Press Windows Key + X and select Device Manager.
+2. Find the Network Adapter section, and expand the tree to see all of the options. Locate the adapter you are using to connect to the network, right click it, and select properties.
+
+![Alt-text](https://github.com/tbritt10/paid-network/blob/master/devicemanager.png "Device Manager")
+
+3. Once the Properties window opens, navigate to Advanced tab and select Network Address from the list of Properties.
+
+![Alt-text](https://github.com/tbritt10/paid-network/blob/master/propertiestab.png "Properties")
+
+4. Enter the target devices MAC address here and click OK. 
+
+To revert the changes here you can simply go back and select the Not Present option.
+
+5. At this point if the target device was a "paid" user you should be able to access the internet, as the network now thinks you are a whitelisted user. 
+
+
  
