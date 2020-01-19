@@ -1,3 +1,5 @@
+# This is a project that was completed for SkillsUSA Job Skills Open Demo in 2015. 
+
 # Bypassing payment for a premium wifi network
 A demonstration of vulnerabilities in paid networks (Planes, hotels, truck stops, etc...) that use a public network with a mac address filter.
 
@@ -38,4 +40,11 @@ To revert the changes here you can simply go back and select the Not Present opt
 5. At this point if the target device was a "paid" user you should be able to access the internet, as the network now thinks you are a whitelisted user. 
 
 
- 
+ ### Spoof Hardware address on Linux
+ Changing the dardware address on Linux is even easier. The commands below are only active until a reboot, to permanently change the mac address you have to edit the configuration file in `/etc/network/interfaces`.
+
+`sudo ifconfig eth0 down`
+
+`sudo ifconfig eth0 hw ether xx:xx:xx:xx:xx:xx`
+
+`sudo ifconfig eth0 up`
